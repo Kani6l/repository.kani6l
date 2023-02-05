@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.heliosiptv" name="[B][COLOR red]Helios IPTV[/B][/COLOR]" version="3.1.2" provider-name="[B][COLOR orange]jude1337[/B][/COLOR]">
-  <extension point="xbmc.python.pluginsource"
-			library="default.py">
-		<provides>video</provides>
+<addon id="plugin.video.heliosiptv" name="[B][COLOR red]Helios IPTV[/B][/COLOR]" version="26+matrix.1" provider-name="[B][COLOR orange]jude1337[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-	<summary lang="en">[COLOR red]An IPTV addon written to work with XC and XCUI for Kodi 19 only[/COLOR] </summary>
-	<language>en</language>
-	<description lang="en">[COLOR red]This addon does not supply nor provide any illegal content[/COLOR]</description>
-	<platform>all</platform>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-	</assets>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">Why should you pay for TV?</summary>
+    <description lang="en_gb">[COLOR red]Free IPTV From The Gods.[/COLOR]</description>
+    <disclaimer lang="en_gb"/>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
   </extension>
 </addon>
 
