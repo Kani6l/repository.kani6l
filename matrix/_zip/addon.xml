@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.heliosiptv" name="[B][COLOR red]Helios IPTV[/B][/COLOR]" version="3.1.2" provider-name="[B][COLOR orange]jude1337[/B][/COLOR]">
+  <extension point="xbmc.python.pluginsource"
+			library="default.py">
+		<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">[COLOR red]An IPTV addon written to work with XC and XCUI for Kodi 19 only[/COLOR] </summary>
+	<language>en</language>
+	<description lang="en">[COLOR red]This addon does not supply nor provide any illegal content[/COLOR]</description>
+	<platform>all</platform>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kani6l" version="1.1.7" name="[COLOR orchid]Kani6l[/COLOR]" provider-name="jude1337">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.25.0" />-->
+        <import addon="script.module.kani6l" />
+        <import addon="script.kani6l.artwork" />
+        <import addon="script.kani6l.metadata" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    </requires>
+    <extension library="kani6l.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Kani6l is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <description lang="en">Say what you want about Yemen, but they are not shy about prescriptions.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/art/ss/1.png</screenshot>
+            <screenshot>resources/art/ss/2.png</screenshot>
+            <screenshot>resources/art/ss/3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.kani6l" name="[COLOR orchid]Kani6l Repo[/COLOR]" provider-name="jude1337" version="1.7.5">
+	<extension point="xbmc.addon.repository" name="Kani6l" >
+			<dir minversion="16.0.0" maxversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/Kani6l/zips/master/_zip/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Kani6l/zips/master/_zip/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Kani6l/zips/master/_zip</datadir>
+			</dir>
+			<dir minversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/Kani6l/zips/master/matrix/_zip/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Kani6l/zips/master//matrix/_zip/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Kani6l/zips/master//matrix/_zip</datadir>
+			</dir>
+			<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			</dir>
+			<dir>
+			<info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+			</dir>
+			<dir minversion="18.0">
+			<info compressed="false">https://raw.githubusercontent.com/jude1337/jude1337/master/repo/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jude1337/jude1337/master/repo/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jude1337/jude1337/master/repo/zips/</datadir>
+			</dir>
+			<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/jude1337/jude1337/master/leia/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jude1337/jude1337/master/leia/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jude1337/jude1337/master/leia/zips/</datadir>
+			</dir>
+			<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/jude1337/jude1337/master/matrix/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jude1337/jude1337/master/matrix/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jude1337/jude1337/master/matrix/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kani6l is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+		<description lang="en">Say what you want about Yemen, but they are not shy about prescriptions.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/art/ss/1.png</screenshot>
+			<screenshot>resources/art/ss/2.png</screenshot>
+			<screenshot>resources/art/ss/3.png</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="resource.uisounds.kani6l" version="1.0.1" name="[COLOR orchid]Kani6l SOUNDS[/COLOR]" provider-name="jude1337">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Kani6l Sounds</summary>
+    <description lang="en">Kani6l Sounds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.kani6l" name="[COLOR orchid]Kani6l MODULE[/COLOR]" version="1.1.7" provider-name="jude1337">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.25.0" />-->
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Kani6l is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <description lang="en">Say what you want about Yemen, but they are not shy about prescriptions.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.kani6l.artwork" version="1.0.0" name="[COLOR orchid]Kani6l ARTWORK[/COLOR]" provider-name="jude1337">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.25.0" />-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Kani6l is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <description lang="en">Say what you want about Yemen, but they are not shy about prescriptions.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.thecrew.metadata" version="1.0.0" name="[COLOR orchid]THE CREW METADATA[/COLOR]" provider-name="The Crew">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.25.0" />-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <description lang="en">Many come, Many go. The true and dedicated are here.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
