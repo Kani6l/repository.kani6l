@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.heliosredux"                                                                                                                                    
+	   name="[B][COLOR orange]Helios Redux[/B][/COLOR]"                                                 
+	   version="5.2.9"                                                                                                                                        
+	   provider-name="[B][COLOR turquoise]jude1337[/B][/COLOR]">
+  <requires>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension library="resources/modules/" point="xbmc.python.module" />
+  <extension library="resources/sources/" point="xbmc.python.module" />
+  <extension library="resources/" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+	<reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en">Reborn from fire and vision</summary>
+    <description lang="en">Fast media steaming at your fingertips.</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+  
+</addon>
